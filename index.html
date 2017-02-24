@@ -6,21 +6,29 @@
 </head>
 
 <body>
-	<nav id="menu">
+	<!--<nav id="menu">
 		<a href="javascript:void(0);" data-view="self">Moi</a>
 		<a href="javascript:void(0);" data-view="school">École</a>
-	</nav>
+	</nav>-->
 	
 	<div id="game">
-		<div class="view" id="self">
-		On prend du temps pour soi-même
+		<div>
+			<button class="action" id="rest">Se reposer</button>
+			<button class="action" id="school">Aller à l'école</button>
+			<button class="action" id="party">Faire la fête</button>
 		</div>
-		
-		<div class="view" id="school">
-		On est à l'école ...
+		<div>
+			Inspiration : <progress id="inspiration" value="0" max="10"></progress><br />
+			Connaissances : <progress id="knowledge" value="0" max="10"></progress><br />
+			Compétence : <progress id="skill" value="0" max="10"></progress><br />
+			Surmenage : <progress id="burnout" value="0" max="10"></progress><br />
+			Fatigue : <progress id="tiredness" value="0" max="10"></progress><br />
 		</div>
 	</div>
 
+	<script src="Game/trait.js"></script>
+	<script src="Game/event.js"></script>
+	<script src="Game/player.js"></script>
 	<script src="Game/main.js"></script>
 </body>
 </html>
